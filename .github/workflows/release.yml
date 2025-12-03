@@ -17,10 +17,10 @@ jobs:
         job:
           - runner: 2vcpu-ubuntu-2404
             arch: amd64
-            ros_distro: jazzy
+            ros_distro: kilted
           - runner: 4vcpu-ubuntu-2404-arm
             arch: arm64
-            ros_distro: jazzy
+            ros_distro: kilted
 
     name: Build - ${{ matrix.job.arch }} - ${{ matrix.job.ros_distro }}
     runs-on: ${{ matrix.job.runner }}
